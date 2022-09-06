@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Britanika</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
     <header>
@@ -28,26 +31,27 @@
                 <div>
                     <h1>Высокие технологии<br> для Вашего комфорта</h1>
                 </div>
+                <div class="blur"></div>
             </div>
-            <div>
-                <div>
+            <div id="first">
+                <div id="intro">
                     <div>
-                        <p>Активация скрытого функционала и дооснащение Вашего автомобиля</p>
+                        <p>Активация скрытого функционала<br>и дооснащение Вашего автомобиля</p>
                     </div>
                     <div>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
+                        <img src="images/model_land.png" alt="Land Rover">
+                        <img src="images/model_jag.png" alt="Jaguar">
+                        <img src="images/model_bmw.png" alt="BMW">
+                        <img src="images/model_mers.png" alt="Mersedes">
                     </div>
                     <div>
-                        <p>Вы сидите за рулем Land Rover или Jaguar, BMW или Mercedes, а значит Вы - настоящий ценитель автомобильного искусства!
-                            Мы готовы раскрыть для Вас все возможности вашего автомобиля, чтобы Вы смогли насладиться его красотой и комфортабельностью в полной мере!
+                        <p>Вы сидите за рулем Land Rover или Jaguar, BMW или Mercedes, а значит Вы - настоящий ценитель автомобильного искусства!<br>
+                            Мы готовы раскрыть для Вас все возможности вашего автомобиля, чтобы Вы смогли насладиться его красотой и комфортабельностью в полной мере!<br>
                             Мы работаем для тех, кто ценит свое время, поэтому делаем ваши часы, проводимые в автомобиле максимально безопасными и удобными! 
                         </p>
                     </div>
                     <div>
-                        <img src="" alt="">
+                        <img src="images/logo_second.png" alt="">
                         <div>
                             <p>Высокие технологии для Вашего комфорта</p>
                         </div>
@@ -55,7 +59,75 @@
                 </div>
             </div>
         </section>
-
+        <section>
+            <div class="menu_brand_select">
+                <nav>
+                    <ul>
+                        <li>Владельцам</li>
+                        <li><a href="">Land Rover</a></li>
+                        <li><a href="">Jaguar</a></li>
+                        <li><a href="">BMW</a></li>
+                        <li><a href="">Mercedes</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="brand_screen">
+                <div>
+                    <p>Каждая из моделей Land Rover обладает особым характером и при этом является<br>
+                       символом безграничных возможностей!<br>
+                       Мы поможем раскрыть весь потенциал вашего автомобиля, расширить<br>
+                       функционал или установить дополнительное оборудование.
+                    </p>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <p>Перечень услуг для авто 2017 года выпуска и позднее мы можем определить по VIN-номеру, для авто старше<br>
+                               2017 г.в. услуги определяются персонально.<br>
+                               Наши менеджеры проконсультируют Вас по всем вопросам!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div>
+                            <p>Популярные услуги</p>
+                            <ul>
+                                <li>Видео в движении</li>
+                                <li>Двойное запирание<br>в одно касание</li>
+                                <li>Круиз контроль<br>для низких скоростей</li>
+                                <li>Автоматический режим<br>Terrain Response2</li>
+                            </ul>    
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>Введите данные своего автомобиля и получите<br>
+                       перечень возможностей его дооснащения
+                    </p>
+                    <button>начать</button>
+                </div>
+            </div>
+        </section>
+        <section class="pv">
+            <div class="photo_video">
+                <img src="images/foto_video_title.png" alt="">
+                <p>наши работы</p>
+                <div class="center">
+                    <!-- <div><iframe  src="https://www.youtube.com/embed/VDOqkoDrPHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> -->
+                    <div><img src="images/example_img.jpg" alt=""></div>
+                    <div><img src="images/example_img.jpg" alt=""></div>
+                    <div><img src="images/example_img.jpg" alt=""></div>
+                    <div><img src="images/example_img.jpg" alt=""></div>
+                    <div><img src="images/example_img.jpg" alt=""></div>
+                    <div><img src="images/example_img.jpg" alt=""></div>
+                    <div><img src="images/example_img.jpg" alt=""></div>
+                    <div><img src="images/example_img.jpg" alt=""></div>
+                    <div><img src="images/example_img.jpg" alt=""></div>
+                    <div><img src="images/example_img.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
