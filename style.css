@@ -10,9 +10,10 @@ body {
     font-family: 'Exo 2';
     font-style: normal;
     font-size: calc( 4px + 11 * ( 100vw / 1920 ) );
-    font-weight: 400;
     line-height: calc( 4px + 25 * ( 100vw / 1920 ) );
-    color: var(--lead_color)
+    font-weight: 400;
+    color: var(--lead_color);
+    background: #F5F5F5;
 }
 header {
     position: absolute;
@@ -21,14 +22,15 @@ header {
     padding: 0 10% 0 10%;
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
 }
-main {
-
+a {
+    color: var(--lead_color);
+    text-decoration: none;
+}
+a:hover , a:active {
+    color: var(--accent_color);
 }
 
-/* Menu */ 
-header nav {
-
-}
+/* Menu */
 header nav ul {
     width: 100%;
     display: flex;
@@ -46,9 +48,6 @@ header nav ul li a {
     font-weight: 500;
     color: var(--lead_color);
     text-decoration: none;
-}
-header nav ul li a:hover, header nav ul li a:active  {
-    color: var(--accent_color);
 }
 #logo_header {
     height: 4.89em;
@@ -169,15 +168,7 @@ header nav ul li a:hover, header nav ul li a:active  {
     line-height: 60px;
     list-style-type: none;
 }
-.menu_brand_select nav ul li a {
-    text-decoration: none;
-    color: var(--lead_color);
-}
-.menu_brand_select nav ul li a:hover, .menu_brand_select nav ul li a:active {
-    color: var(--accent_color);
-}
 
-/* Brand selection screen */
 .brand_screen {
     position: relative;
     width: 100%;
@@ -216,8 +207,7 @@ header nav ul li a:hover, header nav ul li a:active  {
     position: relative;
 }
 .brand_screen > div:nth-child(2) > div:first-child > div {
-    background: url(images/background_brand_child2_first.png) no-repeat;
-    background-size: cover;
+    background: linear-gradient(0deg, rgba(224, 219, 214, 0.96) 0%, rgba(255, 255, 255, 0.6) 100%);;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -245,20 +235,22 @@ header nav ul li a:hover, header nav ul li a:active  {
     list-style-type: none;
     padding-left: 0;
 }
-.service > div ul li {
+.service > div ul li a {
     height: 3.82em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background: #4A3D3A;
     border-radius: 5px;
     color: #ffffff;
     margin-bottom: 5.6%;
+    text-decoration: none;
 }
-.service > div ul li:hover {
+.service > div ul li a:hover {
     background: var(--accent_color);
-    cursor: pointer;
+    color: #ffffff;
 }
 .brand_screen > div:nth-child(3) {
     width: 100%;
@@ -272,16 +264,14 @@ header nav ul li a:hover, header nav ul li a:active  {
     margin: 0;
     padding: 0;
 }
-.brand_screen > div:nth-child(3) button {
+.brand_screen > div:nth-child(3) a {
     padding: 0.63% 2.98%;
     margin: 0 0 0 5.39%;
     text-transform: uppercase;
     color: #ffffff;
     background-color: var(--accent_color);
     border-radius: 5px;
-}
-.brand_screen > div:nth-child(3) button:hover {
-    cursor: pointer;
+    text-decoration: none;
 }
 
 /* Photo & video */
@@ -316,39 +306,144 @@ header nav ul li a:hover, header nav ul li a:active  {
     justify-content: center;
     align-items: center;
 }
-.slick-active:not(.slick-center) {
+.center .slick-active:not(.center .slick-center) {
     width: 2.7% !important;
     height: 17.04em !important;
 }
-.slick-active {
+.center .slick-active {
     margin: auto 0.07% auto 0.07%;
     overflow: hidden;
     background-color: black;
     border-radius: 5px;
 }
-.slick-slide:not(.slick-active) {
+.center .slick-slide:not(.center .slick-active) {
     visibility: hidden;
 }
-.slick-slide img, .slick-slide iframe {
+.center .slick-slide img, .center .slick-slide iframe {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-.slick-center {
+.center .slick-center {
     width: 9.63% !important;
     height: 36.99em !important;
 }
-.prevar {
+.center .prevar {
     position: absolute;
     cursor: pointer;
     right: 20%;
     bottom: 10%;
     z-index: 3;
 }
-.nextar {
+.center .nextar {
     position: absolute;
     cursor: pointer;
     right: 15%;
     bottom: 10%;
     z-index: 3;
+}
+
+/* Car series */
+.car_series {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    background: url(images/background_series_land.jpg), linear-gradient(279.85deg, #CEC5BE 0%, rgba(206, 197, 190, 0) 100%);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
+}
+.car_series > div {
+    margin-top: 6.86%;
+    margin-bottom: 6.86%;
+    /* margin-top: 5.56%;
+    margin-bottom: 5.56%; */
+    background: rgba(255, 255, 255, 0.7);
+}
+.car_series > div:first-child > div:nth-child(1) {
+    height: 5.85em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #C8C3C0;
+}
+.car_series > div:first-child > div:nth-child(1) > img {
+    height: 4.07em;
+}
+.car_series > div:first-child > div:nth-child(2) {
+    width: 25.55em;
+}
+.car_series > div:first-child > div:nth-child(2) > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 9.42%;
+    margin-top: 0;
+    
+}
+.car_series > div:first-child > div:nth-child(2) > ul li {
+    width: 46.39%;
+    margin-bottom: 8.7%;
+    font-style: italic;
+    font-weight: 700;
+    font-size: calc( 2px + 11 * ( 100vw / 1920 ) );
+    line-height: calc( 4px + 11 * ( 100vw / 1920 ) );
+    text-transform: uppercase;
+}
+.car_series > div:last-child > div:nth-child(1) {
+    height: 5.85em;
+    padding-left: 8.93%;
+    background: #C8C3C0;
+    display: flex;
+    align-items: center;
+}
+.car_series > div:last-child > div:nth-child(1) > p {
+    margin: 0;
+    font-size: calc( 8px + 11 * ( 100vw / 1920 ) );
+}
+.car_series > div:last-child > div:nth-child(2) {
+    background: linear-gradient(-270deg, rgba(255, 255, 255, 0.7) -50%, #58483E 100%);
+    padding: 0 23.79em 4.13% 1.93%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.series_slider {
+    width: 25.87em;
+    height: 26.19em;
+    margin-bottom: 0;
+    text-align: center;
+}
+.series_slider img {
+    width: 100%;
+}
+.series_slider div {
+    color: #ffffff;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0px !important;
+}
+.series_slider .slick-dots {
+    bottom: 6%;
+}
+.slick-dots li button::before {
+    color: var(--accent_color) !important;
+    font-size: calc( 2px + 8 * ( 100vw / 1920 ) ) !important ;
+}
+.car_series > div:last-child > div:nth-child(2) > a {
+    width: 100%;
+    height: 2.28em;
+    font-weight: 600;
+    font-size: calc( 5px + 11 * ( 100vw / 1920 ) );
+    line-height: calc( 10px + 23 * ( 100vw / 1920 ) );
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent_color);
+    background: #ffffff;
+    text-align: center;
+    border-radius: 5px;
 }
