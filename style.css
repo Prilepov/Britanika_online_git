@@ -158,12 +158,36 @@ header nav ul li a {
     margin-right: 8.3%;
 }
 .menu_brand_select nav ul li {
-    width: 10.44%;
+    width: 14.7%;
+    margin-left: -4.24%;
     font-size: calc( 4px + 21 * ( 100vw / 1920 ) );
     line-height: calc( 19px + 40 * ( 100vw / 1920 ) );
     list-style-type: none;
+    text-align: center;
 }
-
+.menu_brand_select nav ul li:nth-child(2) {
+    background: linear-gradient(270deg, #C1BBB8 27.44%, rgba(193, 187, 184, 0) 100%);
+    border-radius: 0px 30px 0px 0px;
+    z-index: 5;
+} 
+.menu_brand_select nav ul li:nth-child(3) {
+    background: #B4BFCA;
+    border-radius: 0px 30px 0px 0px;
+    z-index: 4;
+}
+.menu_brand_select nav ul li:nth-child(4) {
+    background: #B4C0BC;
+    border-radius: 0px 30px 0px 0px;
+    z-index: 3;
+}
+.menu_brand_select nav ul li:nth-child(5) {
+    background: #B5BCCC;
+    border-radius: 0px 30px 0px 0px;
+    z-index: 2;
+}
+.menu_brand_select nav ul li a {
+    margin-left: 20.24%;
+}
 .brand_screen {
     position: relative;
     width: 100%;
@@ -437,5 +461,58 @@ header nav ul li a {
     color: var(--accent_color);
     background: #ffffff;
     text-align: center;
+    border-radius: 5px;
+}
+
+/* Your car data */
+.your_car_data {
+    min-height: 46em;
+    position: relative;
+    background: url(images/background_your_car_data.jpg) no-repeat top 65.5% right /60.57%;
+    background-color: #74675F;
+}
+.your_car_data div:first-child {
+    width: 49.48%;
+    position: absolute;
+    top: 13.73em;
+    left: 0px;
+    padding: 2.34% 7.08% 2.34% 28.48%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.85) 30.21%, rgba(10, 9, 11, 0) 100%);
+    border-radius: 5px;
+    z-index: 3;
+}
+.your_car_data div:first-child p {
+    line-height: calc( 8px + 30 * ( 100vw / 1920 ) );
+    font-size: calc( 3px + 16 * ( 100vw / 1920 ) );
+    text-transform: uppercase;
+    text-align: center;
+}
+.your_car_data div:first-child a {
+    padding: 0.63% 13.15%;
+    margin: 0 0 0 5.39%;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: var(--accent_color);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: calc( 4px + 15 * ( 100vw / 1920 ) );
+    line-height: calc( 10px + 40 * ( 100vw / 1920 ) );
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.your_car_data div:last-child {
+    position: absolute;
+    top: 8.29%;
+    left: 15.96%;
+    right: 15.96%;
+    bottom: 13.83%;
+    border: 2px solid #FFFFFF;
     border-radius: 5px;
 }
