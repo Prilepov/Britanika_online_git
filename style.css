@@ -3,6 +3,7 @@
 :root {
     --lead_color: #4A3D3A;
     --accent_color: #C31C2C;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0 0 0 0;
@@ -233,26 +234,26 @@ header nav ul li a {
     padding: 1.66% 0 1.66% 0;
     margin: 0 1% 0 28%;
 }
-.service {
+.pop_service {
     width: 33.01%;
     background: #C0BAB7;
     border-radius: 5px 0px 0px 5px;
     padding-top: 10%;
 }
-.service > div {
+.pop_service > div {
     width: 53.94%;
     margin: 11% 0 16.05% -12.13%;
 }
-.service > div p {
+.pop_service > div p {
     text-align: right;
     margin-bottom: 7%;
 }
-.service > div ul {
+.pop_service > div ul {
     text-align: center;
     list-style-type: none;
     padding-left: 0;
 }
-.service > div ul li a {
+.pop_service > div ul li a {
     height: 3.82em;
     display: flex;
     flex-direction: column;
@@ -265,7 +266,7 @@ header nav ul li a {
     margin-bottom: 5.6%;
     text-decoration: none;
 }
-.service > div ul li a:hover {
+.pop_service > div ul li a:hover {
     background: var(--accent_color);
     color: #ffffff;
 }
@@ -452,7 +453,7 @@ header nav ul li a {
     font-size: calc( 2px + 8 * ( 100vw / 1920 ) ) !important ;
 }
 .car_series > div:last-child > div:nth-child(2) > a {
-    width: 100%;
+    width: 105%;
     height: 2.28em;
     font-weight: 600;
     font-size: calc( 5px + 11 * ( 100vw / 1920 ) );
@@ -553,9 +554,6 @@ header nav ul li a {
 .contacts_address div:first-child > div > div p {
     margin: 1.1% 0 1.1% 0;
 }
-.contacts_address div:first-child > div > div:first-child {
-    padding-right: 4.49%;
-}
 .contacts_address div:first-child > div > div:first-child p {
     margin: 5.88% 0 10.11% 0;
 }
@@ -569,4 +567,81 @@ header nav ul li a {
     width: 100%;
     height: 100%;
     border-radius: 25em 0px 0px 25em;
+}
+
+/* Services page */
+/* Lead Services page */
+#services {
+    height: 100vh;
+    background: url(images/background_land.jpg) no-repeat bottom right /cover;
+}
+#services > img {
+    position: absolute;
+    width: 27.92%;
+    top: 26.63%;
+    left: 16.60%;
+}
+#services > div {
+    width: 44.76%;
+    position: absolute;
+    bottom: 0;
+    left: 32.99%;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 1.8% 5.32% 2.2% 2.87%;
+}
+
+/* Services choise */
+.services_array {
+    display: flex;
+    align-items: flex-start;
+    background: #C1BBB8;
+}
+.services_array > div:first-child {
+    margin-top: -18.19%;
+    width: 30.68%;
+}
+.services_array > div:first-child ul li {
+    list-style: none;
+    min-height: 2.87em;
+    padding-left: 55.61%;
+    margin-bottom: 5px;
+    background: linear-gradient(270deg, #4A3D3A 47.54%, rgba(74, 61, 58, 0) 100%);
+    border-radius: 5px;
+    line-height: calc( 2px + 13 * ( 100vw / 1920 ) );
+    display: flex;
+}
+.services_array > div:first-child ul li:hover {
+    background: var(--accent_color);
+}
+.services_array > div:first-child ul li a {
+    color: #ffffff;
+    padding: 2.68% 13.4% 2.68% 0;
+}
+.services_array > div:nth-child(2) {
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 1.75% auto 1.75% 2.19%;
+}
+.services_array > div:nth-child(2) > div:first-child {
+    margin-right: 3.27%;
+}
+.services_array > div:nth-child(2) > div:nth-child(2) {
+    width: 26.15em;
+}
+.services_array > div:nth-child(2) > div:nth-child(2) img {
+    width: 100%;
+}
+.services_array > div:nth-child(2) table {
+    border-spacing: 1.32em 1.57em;
+}
+.services_array > div:nth-child(2) td {
+    position: relative;
+}
+.services_array > div:nth-child(2) select {
+    width: 28.96em;
+    height: 2.7em;
 }
