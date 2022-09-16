@@ -645,3 +645,92 @@ header nav ul li a {
     width: 28.96em;
     height: 2.7em;
 }
+
+/* Pop-up */
+.popup-fade {
+    display: none;
+}
+.popup-fade:before {
+    content: '';
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9990;
+}
+.popup {
+    position: fixed;
+    --pop_up_width: 1000px;
+    --pop_up_height: 880px;
+    width: var(--pop_up_width);
+    height: var(--pop_up_height);
+    top: calc((100% - var(--pop_up_height)) / 2 - 2%);
+    left: calc((100% - var(--pop_up_width)) / 2 );
+    background: #ffffff;
+    z-index: 99999;
+    opacity: 1;
+    padding: 1% 1% 1% 1%;
+    box-sizing: content-box;
+    overflow-block: scroll;
+}
+.popup-close {
+    position: absolute;
+    top: 1.87%;
+    right: 1%;
+    font-size: 5vh;
+    line-height: 0;
+}
+.popup-close:hover {
+    font-size: 6vh;
+}
+.popup > div:nth-child(2) {
+    background: linear-gradient(-270deg, #C0BAB7 3.13%, rgba(255, 255, 255, 0) 100%);
+    border-image-source: linear-gradient(-270deg, #C31C2C 0%, rgba(195, 28, 44, 0) 100%);
+    border-image-slice: 30;
+	border-width: 2px;
+	border-style: solid;
+    border-right: none;
+}
+.popup > div:nth-child(2) h3 {
+    margin: 38px auto 38px 45px;
+    color: var(--accent_color);
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.popup > div:nth-child(3) {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 151px 60px 45px;
+    border-image-source: linear-gradient(270deg, #C31C2C 0%, rgba(195, 28, 44, 0) 100%);
+	border-image-slice: 30;
+	border-width: 2px;
+	border-style: solid;
+}
+.popup >div:nth-child(3) p , .popup >div:nth-child(3) ul , .popup_slider {
+    margin: 40px auto 0 0;
+}
+.slick-active {
+    height: 150px !important;
+}
+.popup_slider > div img {
+    width: 90%;
+    height: auto;
+}
+.prevar_popup {
+    position: absolute;
+    cursor: pointer;
+    left: -5%;
+    bottom: 40%;
+    z-index: 3;
+}
+.nextar_popup {
+    position: absolute;
+    cursor: pointer;
+    right: -3%;
+    bottom: 40%;
+    z-index: 3;
+}
