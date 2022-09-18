@@ -648,7 +648,7 @@ header nav ul li a {
 
 /* Pop-up */
 .popup-fade {
-    display: none;
+    /* display: none; */
 }
 .popup-fade:before {
     content: '';
@@ -662,8 +662,8 @@ header nav ul li a {
 }
 .popup {
     position: fixed;
-    --pop_up_width: 1000px;
-    --pop_up_height: 880px;
+    --pop_up_width: 48.8vw;
+    --pop_up_height: 93vh;
     width: var(--pop_up_width);
     height: var(--pop_up_height);
     top: calc((100% - var(--pop_up_height)) / 2 - 2%);
@@ -689,32 +689,32 @@ header nav ul li a {
     background: linear-gradient(-270deg, #C0BAB7 3.13%, rgba(255, 255, 255, 0) 100%);
     border-image-source: linear-gradient(-270deg, #C31C2C 0%, rgba(195, 28, 44, 0) 100%);
     border-image-slice: 30;
-	border-width: 2px;
+	border-width: 0.1em;
 	border-style: solid;
     border-right: none;
 }
 .popup > div:nth-child(2) h3 {
-    margin: 38px auto 38px 45px;
+    margin: 3.8% auto 3.8% 4.5%;
     color: var(--accent_color);
-    font-size: 20px;
-    line-height: 20px;
+    font-size: calc( 3px + 16 * ( 100vw / 1920 ) );
+    line-height: calc( 3px + 16 * ( 100vw / 1920 ) );
     font-weight: 400;
     text-transform: uppercase;
 }
 .popup > div:nth-child(3) {
     width: 100%;
     box-sizing: border-box;
-    padding: 0 151px 60px 45px;
+    padding: 0 15.13% 6.01% 4.5%;
     border-image-source: linear-gradient(270deg, #C31C2C 0%, rgba(195, 28, 44, 0) 100%);
 	border-image-slice: 30;
-	border-width: 2px;
+	border-width: 0.1em;
 	border-style: solid;
 }
 .popup >div:nth-child(3) p , .popup >div:nth-child(3) ul , .popup_slider {
-    margin: 40px auto 0 0;
+    margin: 5% auto 0 0;
 }
 .slick-active {
-    height: 150px !important;
+    height: 9.53em !important;
 }
 .popup_slider > div img {
     width: 90%;
