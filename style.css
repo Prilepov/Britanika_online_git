@@ -15,7 +15,7 @@ body {
     font-weight: 400;
     color: var(--lead_color);
     background: #F5F5F5;
-    min-width: 810px;
+    /* min-width: 810px; */
 }
 header {
     position: absolute;
@@ -141,6 +141,9 @@ header nav ul li a {
     text-transform: uppercase;
     color: var(--accent_color);
     margin: 0 0 0 16px;
+}
+.background_first_mobile {
+    display: none;
 }
 
 /* Menu brand selection */
@@ -291,6 +294,12 @@ header nav ul li a {
     border-radius: 5px;
     text-decoration: none;
 }
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
 
 /* Photo & video */
 .photo_video {
@@ -367,16 +376,16 @@ header nav ul li a {
     flex-direction: row;
     justify-content: flex-end;
     align-items: stretch;
-    background: url(images/background_series_land.jpg), linear-gradient(279.85deg, #CEC5BE 0%, rgba(206, 197, 190, 0) 100%);
+    background: url(images/background_series_land.png), linear-gradient(279.85deg, #CEC5BE 0%, rgba(206, 197, 190, 0) 100%);
     background-repeat: no-repeat;
     background-position: center left;
     background-size: contain;
+    /* background-blend-mode: multiply; */
+    /* margin-top: -6.9%; */
 }
 .car_series > div {
     margin-top: 6.86%;
     margin-bottom: 6.86%;
-    /* margin-top: 5.56%;
-    margin-bottom: 5.56%; */
     background: rgba(255, 255, 255, 0.7);
 }
 .car_series > div:first-child > div:nth-child(1) {
@@ -446,7 +455,7 @@ header nav ul li a {
     margin-bottom: 0px !important;
 }
 .series_slider .slick-dots {
-    bottom: 6%;
+    bottom: -25%;
 }
 .slick-dots li button::before {
     color: var(--accent_color) !important;
@@ -648,7 +657,7 @@ header nav ul li a {
 
 /* Pop-up */
 .popup-fade {
-    /* display: none; */
+    display: none;
 }
 .popup-fade:before {
     content: '';

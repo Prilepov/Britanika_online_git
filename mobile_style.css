@@ -1,0 +1,106 @@
+:root {
+    --lead_color: #4A3D3A;
+    --accent_color: #C31C2C;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#lead {
+    background: url(images/background_lead_mobile.jpg) no-repeat center /contain;
+}
+#lead div:first-child {
+    top:20%
+}
+#lead div h1 {
+    font-size: 24px;
+    line-height: 42px;
+    color: #606075;
+}
+#first {
+    margin: 0;
+    top: 6em;
+}
+#intro {
+    position: relative;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(179.83deg, rgba(90, 81, 75, 0) 0.14%, #5A514B 15.07%, #5A514B 99.85%);
+}
+#intro > div:first-child {
+    font-size: 16px;
+    text-align: left;
+    line-height: 30px;
+    padding-right: 25%;
+}
+#intro > div:nth-child(2) img {
+    height: 4em;
+    margin: 2em 0;
+}
+#intro > div:nth-child(4) {
+    display: none;
+}
+.background_first_mobile {
+    display: block;
+    background: url(images/background_first.jpg) no-repeat center /cover;
+    height: 55em;
+    width: 100%;
+}
+
+/* Brand select */ 
+.menu_brand_select {
+    margin-top: 3em;
+    background: none;
+    position: relative;
+}
+.menu_brand_select nav ul li {
+    width: 100%;
+    font-size: 14px;
+}
+.menu_brand_select > nav > ul > li:first-child {
+    position: absolute;
+    top: -2em;
+    left: 0;
+    text-align: left;
+    margin-left: 2.44%;
+}
+.brand_screen > div:nth-child(2) {
+    flex-direction: column;
+}
+.brand_screen > div:nth-child(2) > div:first-child {
+    width: 100%;
+    background-size: contain;
+    margin: 0;
+}
+.brand_screen > div:nth-child(2) > div:first-child > div p {
+    margin: 0;
+    padding: 2.44%;
+}
+.pop_service {
+    width: 100%;
+    padding: 0;
+}
+.pop_service > div {
+    width: 100%;
+    margin: 0;
+    padding: 2.44%;
+    box-sizing: border-box;
+}
+.pop_service > div ul li a {
+    height: 4.3em;
+    margin-bottom: 0.7em;
+}
+.brand_screen > div:nth-child(3) {
+    flex-direction: column;
+    text-align: center;
+}
+.brand_screen > div:nth-child(3) p {
+    padding: 2em 3.9em 2em 3.9em;
+}
+.brand_screen > div:nth-child(3) a {
+    padding: 2.63% 9.98%;
+    margin: 0;
+}

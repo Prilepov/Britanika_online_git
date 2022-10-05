@@ -60,3 +60,13 @@ $(document).ready(function($) {
 $('.popup-open').click(function() {
     slick.slick('refresh');
 });
+
+/* Car series switcher */
+$( document ).ready(function() {
+    $(".switcher").click(function(e) {
+      $(this).addClass('active');{
+        $('.tab-content.active').removeClass('active');
+        $('.tab-content.' + $(this).data('target')).addClass('active');
+      }
+    })
+  })
