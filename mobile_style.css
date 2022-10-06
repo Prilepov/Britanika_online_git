@@ -104,3 +104,46 @@ body {
     padding: 2.63% 9.98%;
     margin: 0;
 }
+
+/* Photo & Video */
+.photo_video {
+    /* height: 100%; */
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+.photo_video > img {
+    width: 60%;
+    position: relative;
+    padding-bottom: 5em;
+}
+.photo_video > p {
+    display: none;
+}
+.center {
+    width: 100% !important;
+    margin: 0;
+}
+
+.center .slick-list {
+    padding: 0 !important;
+} 
+.center .slick-center {
+    width: 4.5% !important;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    /* height: 326px; */
+    padding-bottom: 10.4em;
+}
+.center .slick-center img {
+    object-fit: contain;
+}
+.center .slick-active {
+    background: #4A403E;
+}
+.center .slick-active > p {
+    color: #FFFFFF;
+    padding: 10px;
+    padding-bottom: 100px;
+}
