@@ -15,15 +15,18 @@ body {
     font-weight: 400;
     color: var(--lead_color);
     background: #F5F5F5;
-    /* min-width: 810px; */
 }
 header {
     position: absolute;
     width: 80%;
-    height: 33.6%;
     padding: 0 10% 0 10%;
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
 a {
     color: var(--lead_color);
     text-decoration: none;
@@ -33,7 +36,7 @@ a:hover , a:active {
 }
 
 /* Menu */
-header nav ul {
+header ul {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -41,11 +44,11 @@ header nav ul {
     align-items: center;
     padding: 0;
 }
-header nav ul li {
+header ul li {
     margin-right: 3.31%;
     list-style: none;
 }
-header nav ul li a {
+header ul li a {
     font-size: calc( 4px + 11 * ( 100vw / 1920 ) );
     font-weight: 500;
     color: var(--lead_color);
@@ -55,6 +58,9 @@ header nav ul li a {
     height: 4.89em;
     margin-top: 1em;
     padding-right: 3.36em;
+}
+#menu__toggle, .menu__btn {
+    display: none;
 }
 
 /* Lead screen */
@@ -380,8 +386,6 @@ header nav ul li a {
     background-repeat: no-repeat;
     background-position: center left;
     background-size: contain;
-    /* background-blend-mode: multiply; */
-    /* margin-top: -6.9%; */
 }
 .car_series > div {
     margin-top: 6.86%;
@@ -742,4 +746,19 @@ header nav ul li a {
     right: -3%;
     bottom: 40%;
     z-index: 3;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background: #3A312F;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+footer p:last-child {
+    width: 60%;
+    text-align: center;
+    padding-left: 10%;
 }

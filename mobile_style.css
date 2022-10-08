@@ -8,7 +8,88 @@ body {
     font-size: 14px;
     line-height: 24px;
 }
+header {
+    justify-content: space-between;
+}
+#logo_header {
+    height: 4em;
+    margin-top: 0;
+}
 
+/* Burger menu */
+#menu__toggle {
+    opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    right: 20px;  
+    width: 26px;
+    height: 26px;  
+    cursor: pointer;
+    z-index: 10;
+  }/* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;  width: 100%;
+    height: 2px;  background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  /* контейнер меню */
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    height: 100%;  margin: 0;
+    padding: 80px 0;  list-style: none;
+    text-align: center;  background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }/* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;  color: #333;
+    font-size: 20px;
+    font-weight: 600;  text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+.hamburger-menu {
+    padding-top: 5%;
+    padding-left: 5%;
+    z-index: 10;
+}
+
+/* Lead */
 #lead {
     background: url(images/background_lead_mobile.jpg) no-repeat center /contain;
 }
@@ -28,6 +109,7 @@ body {
     position: relative;
     width: 100%;
     left: 0;
+    padding-top: 35%;
     background: linear-gradient(179.83deg, rgba(90, 81, 75, 0) 0.14%, #5A514B 15.07%, #5A514B 99.85%);
 }
 #intro > div:first-child {
@@ -37,7 +119,7 @@ body {
     padding-right: 25%;
 }
 #intro > div:nth-child(2) img {
-    height: 4em;
+    height: 3.5em;
     margin: 2em 0;
 }
 #intro > div:nth-child(4) {
@@ -107,10 +189,9 @@ body {
 
 /* Photo & Video */
 .photo_video {
-    /* height: 100%; */
     margin: auto;
     padding-top: 1em;
-    padding-bottom: 2em;
+    padding-bottom: 9.7em;
 }
 .photo_video > img {
     width: 60%;
@@ -124,7 +205,6 @@ body {
     width: 100% !important;
     margin: 0;
 }
-
 .center .slick-list {
     padding: 0 !important;
 } 
@@ -133,7 +213,6 @@ body {
     border-radius: 5px;
     margin-right: auto;
     margin-left: auto;
-    /* height: 326px; */
     padding-bottom: 10.4em;
 }
 .center .slick-center img {
@@ -146,4 +225,122 @@ body {
     color: #FFFFFF;
     padding: 10px;
     padding-bottom: 100px;
+}
+
+/* Car series */
+.car_series {
+    flex-direction: column;
+    background: none;
+}
+.car_series > div {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.car_series > div:first-child > div:nth-child(1) {
+    background: none;
+}
+.car_series > div:first-child > div:nth-child(1) > img {
+    height: 3em;
+    margin-right: 5%;
+}
+.car_series > div:first-child > div:nth-child(1)::after {
+    content: "Выберите серию и поколение";
+    font-size: 14px;
+}
+.car_series > div:first-child > div:nth-child(2) {
+    width: 100%;
+}
+.car_series > div:first-child > div:nth-child(2) > ul li {
+    width: 50%;
+    font-size: 12px;
+}
+.car_series > div:last-child > div:nth-child(1) {
+    display: none;
+}
+.car_series > div:last-child > div:nth-child(2) {
+    padding: 0 0 10% 0;
+    background: linear-gradient(270deg, rgba(206, 197, 190, 0.8) 0%, rgba(217, 217, 217, 0) 100%);
+}
+.series_slider div {
+    font-size: 14px;
+    color: rgba(50, 24, 18, 1);
+}
+.slick-dots li button::before {
+    font-size: 10px !important;
+}
+.car_series > div:last-child > div:nth-child(2) > a {
+    font-size: 16px;
+    width: 30%;
+    padding: 10px;
+    height: 1.2em;
+}
+
+/* Your car data */
+.your_car_data {
+    min-height: 25em;
+    background-size: 150%;
+    background-position: 20% 0%;
+    background-color: #FFFFFF;
+    margin-bottom: 25%;
+}
+.your_car_data div:last-child {
+    display: none;
+}
+.your_car_data div:first-child {
+    width: 90%;
+    left: 5%;
+    background: #74675F;
+    padding: 5% 11.5%;
+}
+.your_car_data div:first-child p {
+    font-size: 14px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.your_car_data div:first-child a {
+    font-size: 14px;
+    padding: 4% 15%;
+    font-weight: 400;
+    margin-top: 5%;
+}
+
+/* Contacts address */
+.contacts_address {
+    flex-direction: column;
+    background-size: 270%;
+    background-position: 52% 5%;
+}
+.contacts_address div:first-child {
+    align-items: center;
+    font-size: 14px;
+}
+.contacts_address div:first-child > div {
+    width: 100%;
+}
+.contacts_address div:first-child > p {
+    font-size: 14px;
+    margin: auto;
+    padding-top: 5%;
+}
+.contacts_address div:first-child > div > div p , .contacts_address div:first-child > div > div {
+    font-size: 14px;
+    line-height: 2em;
+}
+.contacts_address > div:last-child {
+    width: 100%;
+}
+.contacts_address > div:last-child {
+    height: 30em;
+}
+.contacts_address > div:last-child iframe {
+    border-radius: 0;
+}
+
+/* Footer */
+footer p:first-child {
+    display: none;
+}
+footer p:last-child {
+    width: 100%;
+    padding: 1%;
 }
