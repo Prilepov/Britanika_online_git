@@ -12,50 +12,51 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><img id="logo_header" src="images/logo.png"></li>
-                <li><a href="">Услуги для Land Rover</a></li>
-                <li><a href="">Услуги для Jaguar</a></li>
-                <li><a href="">Услуги для BMW</a></li>
-                <li><a href="">Услуги для Mersedes</a></li>
-                <li><a href="#photo_video">Галерея</a></li>
-                <li><a href="#contacts_address">Контакты</a></li>
-            </ul>
-        </nav>
+    <header class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <img id="logo_header" src="images/logo.png">
+        <ul class="menu__box">
+            <li><a class="menu__item" href="">Услуги для Land Rover</a></li>
+            <li><a class="menu__item" href="">Услуги для Jaguar</a></li>
+            <li><a class="menu__item" href="">Услуги для BMW</a></li>
+            <li><a class="menu__item" href="">Услуги для Mersedes</a></li>
+            <li><a class="menu__item" href="#photo_video">Галерея</a></li>
+            <li><a class="menu__item" href="#contacts_address">Контакты</a></li>
+        </ul>
     </header>
-    <main>
-        <section>
+    <main class="land_main">
+        <div class="services_array">
+            <div>
+                <ul>
+                    <li><a href="#">Видео в движении</a></li>
+                    <li><a href="#">Двойное запирание в одно касание</a></li>
+                    <li><a href="#">Круиз контроль для низких скоростей</a></li>
+                    <li><a href="#">Автоматический режим Terrain Response2</a></li>
+                    <li><a href="#">Динамический режим</a></li>
+                    <li><a href="#">Настраиваемый динамический режим</a></li>
+                    <li><a href="#">Оформления щитка и монитора в стиле R-dynamic, SVR и др.</a></li>
+                    <li><a href="#">InControlApps с поддержкой Яндекс навигатора для Андроид</a></li>
+                    <li><a href="#">Помощь при движении задним ходом</a></li>
+                    <li><a href="#">Автоматическое управление дальним светом AHBA</a></li>
+                    <li><a href="#">Ассистент удержания в полосе LKA</a></li>
+                    <li><a href="#">Распознавание дорожных знаков TSR</a></li>
+                    <li><a href="#">Ассистент усталости водителя DDM</a></li>
+                    <li><a href="#">Ассистент автоматической парковки </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="services_s_choise">
             <div id="services">
-                <img src="images/land_title.png" alt="">
                 <div>
-                    <p>Наша команда профессионально занимается установкой оригинального оборудования Land Rover, доработкой технических характеристик, дооснащением и активацией, заложенных заводом Land Rover опции.<br>
-                        Все системы и комплекты дооснащения для Land Rover полностью оригинальные, от европейских дилеров Land Rover.<br> При проведении работ в нашей компании заводская гарантия на автомобиль сохраняется. Дооснащение оригинальными опциями выполняются опытными мастерами по технологии завода изготовителя.
+                    <p>Наша команда профессионально занимается установкой оригинального оборудования Land Rover, доработкой технических характеристик, дооснащением и активацией, заложенных заводом Land Rover опции.<br><br>
+                        Все системы и комплекты дооснащения для Land Rover полностью оригинальные, от европейских дилеров Land Rover.<br><br> При проведении работ в нашей компании заводская гарантия на автомобиль сохраняется. Дооснащение оригинальными опциями выполняются опытными мастерами по технологии завода изготовителя.
                     </p>
                 </div>
             </div>
-        </section>
-        <section>
-            <div class="services_array">
-                <div>
-                    <ul>
-                        <li><a href="#" class="popup-open">Видео в движении</a></li>
-                        <li><a href="#" class="popup-open">Двойное запирание в одно касание</a></li>
-                        <li><a href="#" class="popup-open">Круиз контроль для низких скоростей</a></li>
-                        <li><a href="#" class="popup-open">Автоматический режим Terrain Response2</a></li>
-                        <li><a href="#" class="popup-open">Динамический режим</a></li>
-                        <li><a href="#" class="popup-open">Настраиваемый динамический режим</a></li>
-                        <li><a href="#" class="popup-open">Оформления щитка и монитора в стиле R-dynamic, SVR и др.</a></li>
-                        <li><a href="#" class="popup-open">InControlApps с поддержкой Яндекс навигатора для Андроид</a></li>
-                        <li><a href="#" class="popup-open">Помощь при движении задним ходом</a></li>
-                        <li><a href="#" class="popup-open">Автоматическое управление дальним светом AHBA</a></li>
-                        <li><a href="#" class="popup-open">Ассистент удержания в полосе LKA</a></li>
-                        <li><a href="#" class="popup-open">Распознавание дорожных знаков TSR</a></li>
-                        <li><a href="#" class="popup-open">Ассистент усталости водителя DDM</a></li>
-                        <li><a href="#" class="popup-open">Ассистент автоматической парковки </a></li>
-                    </ul>
-                </div>
+            <div>
                 <div class="dropdown_choise">
                     <div>
                         <form action="">
@@ -89,37 +90,51 @@
                         <img src="images/example_land.jpg" alt="">
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="popup-fade">
-                <div class="popup">
-                    <a class="popup-close" href="#">&times</a>
+
+                <div class="service_card">
                     <div>
-                        <h3>Динамический режим</h3>
+                        <h2>
+                            динамический режим
+                        </h2>
+                    </div>
+                    <div>
+                        <p>
+                            Активация режима Dynamic. Комфорт. Данный режим используется для 
+                            раскрытия максимальных возможностей автомобиля при движении по 
+                            дороге. Способствует более сконцентрированному и азартному вождению.
+                        </p>
+                        <div>
+                            <img src="images/example_services_clock.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            Режим Dynamic — изначально скрытый режим в конфигурации автомобиля, 
+                            который позволяет раскрыть новые динамические качества вашего Land 
+                            Rover. При включении режима приборная панель меняет цвет на красный.
+                        </p>
+                        <div>
+                            <img src="images/example_services_wheel.png" alt="">
+                        </div>
                     </div>
                     <div>
                         <div>
                             <p>
-                                Активация режима Dynamic. Комфорт. Данный режим используется для раскрытия 
-                                максимальных возможностей автомобиля при движении по дороге. 
-                                Способствует более сконцентрированному и азартному вождению.
-                                <br><br>
-                                Режим Dynamic — изначально скрытый режим в конфигурации автомобиля, 
-                                который позволяет раскрыть новые динамические качества вашего Land Rover. 
-                                При включении режима приборная панель меняет цвет на красный.
+                                При активации данного режима: <br><br>
+
+                                Педаль газа становится отзывчивой<br>
+                                Динамической перераспределение тяжести руля<br>
+                                Усиливается жесткость подвески, автомобиль меньше кренится в поворотах<br>
+                                Коробка передач переключается мгновенно<br>
+                                Приборная панель меняется на красный цвет<br>
                             </p>
-                            <p>При активации данного режима:</p>
-                            <ul>
-                                <li>Педаль газа становится отзывчивой</li>
-                                <li>Динамической перераспределение тяжести руля</li>
-                                <li>Усиливается жесткость подвески, автомобиль меньше кренится в поворотах</li>
-                                <li>Коробка передач переключается мгновенно</li>
-                                <li>Приборная панель меняется на красный цвет</li>
-                            </ul>
                         </div>
+                        <p>
+                            от 8 000,00 р.
+                        </p>
+                    </div>
+                    <div>
                         <div class="popup_slider">
-                            <div><img src="images/example_land.jpg" alt=""></div>
                             <div><img src="images/example_popup_slider_2.jpg" alt=""></div>
                             <div><img src="images/example_popup_slider_3.jpg" alt=""></div>
                             <div><img src="images/example_popup_slider_4.jpg" alt=""></div>
@@ -127,12 +142,11 @@
                             <div><img src="images/example_popup_slider_2.jpg" alt=""></div>
                             <div><img src="images/example_popup_slider_3.jpg" alt=""></div>
                             <div><img src="images/example_popup_slider_4.jpg" alt=""></div>
-                        </div>    
+                        </div> 
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="popup_slider"></div>
+        </div>
     </main> 
     <script src="script.js"></script>   
 </body>

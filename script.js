@@ -40,36 +40,6 @@ let slick = $('.popup_slider').slick({
     nextArrow: "<img src='images/nex_arrow.png' class='nextar_popup' alt='1'>"
 })
 
-/* Pop-up */
-$(document).ready(function($) {
-	$('.popup-open').click(function() {
-		$('.popup-fade').fadeIn();
-		return false;
-	});	
-	
-	$('.popup-close').click(function() {
-		$(this).parents('.popup-fade').fadeOut();
-		return false;
-	});		
- 
-	$(document).keydown(function(e) {
-		if (e.keyCode === 27) {
-			e.stopPropagation();
-			$('.popup-fade').fadeOut();
-		}
-	});
-	
-	$('.popup-fade').click(function(e) {
-		if ($(e.target).closest('.popup').length == 0) {
-			$(this).fadeOut();					
-		}
-	});
-});
-
-$('.popup-open').click(function() {
-    slick.slick('refresh');
-});
-
 /* Car series switcher */
 $( document ).ready(function() {
     $(".switcher").click(function(e) {
