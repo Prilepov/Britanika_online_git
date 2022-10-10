@@ -585,6 +585,7 @@ header ul li a {
 /* Services page */
 .land_main {
     display: flex;
+    flex-direction: row;
     padding: 8% 10%;
 }
 .services_s_choise {
@@ -593,6 +594,7 @@ header ul li a {
 }
 .dropdown_choise {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     background : rgba(255, 255, 255, 0.8);
     position: relative;
@@ -676,7 +678,7 @@ header ul li a {
     color: #4A3D3A;
     padding: 2.68% 13.4% 2.68% 0;
 }
-.services_array > div:first-child ul li a:hover {
+.services_array > div:first-child ul li:hover a {
     color: #FFFFFF;
 }
 .services_array > div:nth-child(2) {

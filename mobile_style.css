@@ -334,6 +334,116 @@ header {
     border-radius: 0;
 }
 
+/* Services page */
+.land_main {
+    flex-direction: column-reverse ;
+    padding: 0;
+}
+#services > div {
+    margin-top: 70vh;
+    width: 100%;
+}
+.dropdown_choise {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin-left: 0;
+    box-sizing: border-box;
+}
+.dropdown_choise tr {
+    display: flex;
+    flex-direction: column;
+}
+.dropdown_choise table {
+    width: 100%;
+}
+.dropdown_choise > div:first-child {
+    width: 100%;
+}
+.dropdown_choise > div:nth-child(2) {
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+.dropdown_choise > div:nth-child(2) img {
+    border: 0;
+}
+.service_card {
+    margin-top: 0;
+}
+.services_array > div ul {
+    margin-top: 0;
+    padding-left: 0;
+}
+.services_array > div ul li a {
+    line-height: 16px;
+}
+.service_card {
+    margin: 0;
+}
+.service_card > div:first-child {
+    list-style: none;
+    /* height: 2.87em; */
+    padding: 1.88% 0;
+    /* margin-bottom: 5px; */
+    background: #C31C2C;
+    /* border-radius: 5px; */
+    display: flex;
+    box-shadow: inset 0px 0px 10px #BAA8A4;
+}
+.service_card > div:first-child > h2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: calc( 2px + 3 * ( 100vw / 1920 ) );
+}
+.service_card > div:nth-child(2) > div:nth-child(2), .service_card > div:nth-child(3) > div {
+    display: none;
+}
+.service_card > div:nth-child(2) {
+    padding-right: 3.2%;
+}
+.service_card > div:nth-child(3) {
+    padding-left: 3.2%;
+}
+.service_card > div:nth-child(2) > p {
+    margin-right: 0;
+}
+.service_card > div:nth-child(3) > p {
+    margin-left: 0;
+}
+.service_card > div:nth-child(4) {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 3.2%;
+}
+.service_card > div:nth-child(4) p {
+    margin-top: 5%;
+}
+.popup_slider {
+    width: 100%;
+    padding-bottom: 15%;
+}
+.popup_slider .slick-slide img {
+    width: 100%;
+}
+.prevar_popup {
+    position: absolute;
+    cursor: pointer;
+    left: 5%;
+    bottom: 0;
+    z-index: 3;
+}
+.nextar_popup {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    bottom: 0;
+    z-index: 3;
+}
+
 /* Footer */
 footer p:first-child {
     display: none;

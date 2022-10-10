@@ -27,18 +27,36 @@ $('.series_slider').slick({
     infinite: true,
 })
 
-/* Popup slider */
-let slick = $('.popup_slider').slick({
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 1000,
-    prevArrow: "<img src='images/prev_arrow.png' class='prevar_popup' alt='1'>",
-    nextArrow: "<img src='images/nex_arrow.png' class='nextar_popup' alt='1'>"
+/* Popup slider + mobile version */
+$(document).ready(function($) {
+  if (window.innerWidth < 390) {
+    $('.popup_slider').slick ({
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 1000,
+      prevArrow: "<img src='images/prev_arrow.png' class='prevar_popup' alt='1'>",
+      nextArrow: "<img src='images/nex_arrow.png' class='nextar_popup' alt='1'>"
+    })
+  }
+  else {
+    $('.popup_slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 1000,
+      prevArrow: "<img src='images/prev_arrow.png' class='prevar_popup' alt='1'>",
+      nextArrow: "<img src='images/nex_arrow.png' class='nextar_popup' alt='1'>"
+  })
+  }
 })
+;
 
 /* Car series switcher */
 $( document ).ready(function() {
