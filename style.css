@@ -31,7 +31,7 @@ a {
     color: var(--lead_color);
     text-decoration: none;
 }
-a:hover , a:active {
+a:hover , a:active , a:checked {
     color: var(--accent_color);
 }
 
@@ -233,6 +233,9 @@ header ul li a {
     background: url(images/background_brand_screen.jpg) no-repeat center /cover;
     position: relative;
 }
+.brand_screen_jaguar > div:nth-child(2) > div:first-child {
+    background: url(images/background_brand_screen_jaguar.jpg) no-repeat center /cover;
+}
 .brand_screen > div:nth-child(2) > div:first-child > div {
     background: linear-gradient(0deg, rgba(224, 219, 214, 0.96) 0%, rgba(255, 255, 255, 0.6) 100%);;
     width: 100%;
@@ -387,6 +390,12 @@ header ul li a {
     background-position: center left;
     background-size: contain;
 }
+.car_series_jaguar {
+    background: url(images/background_series_jaguar.png), linear-gradient(279.85deg, #CEC5BE 0%, rgba(206, 197, 190, 0) 100%);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
+}
 .car_series > div {
     margin-top: 6.86%;
     margin-bottom: 6.86%;
@@ -424,6 +433,9 @@ header ul li a {
     font-size: calc( 2px + 11 * ( 100vw / 1920 ) );
     line-height: calc( 4px + 11 * ( 100vw / 1920 ) );
     text-transform: uppercase;
+}
+.car_series_jaguar > div:first-child > div:nth-child(2) > ul li {
+    width: 30.39%;
 }
 .car_series > div:last-child > div:nth-child(1) {
     height: 5.85em;
