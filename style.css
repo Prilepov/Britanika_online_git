@@ -305,11 +305,16 @@ header ul li a {
     border-radius: 5px;
     text-decoration: none;
 }
+.sliderall {
+    position: relative;
+}
 .tab-content {
-    display: none;
+    visibility: hidden;
+    height: 0em !important;
 }
 .tab-content.active {
-    display: block;
+    visibility: visible;
+    height: 100% !important;
 }
 
 /* Photo & video */
@@ -436,6 +441,13 @@ header ul li a {
     line-height: calc( 4px + 11 * ( 100vw / 1920 ) );
     text-transform: uppercase;
 }
+.car_series > div:first-child > div:nth-child(2) > ul li p {
+    margin: 0;
+}
+.car_series > div:first-child > div:nth-child(2) > ul li p:hover {
+    color: #C31C2C;
+    cursor: pointer;
+}
 .car_series_jaguar > div:first-child > div:nth-child(2) > ul li {
     width: 30.39%;
 }
@@ -473,7 +485,7 @@ header ul li a {
     margin-bottom: 0px !important;
 }
 .series_slider .slick-dots {
-    bottom: -25%;
+    bottom: -18%;
 }
 .slick-dots li button::before {
     color: var(--accent_color) !important;

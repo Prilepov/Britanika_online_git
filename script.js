@@ -24,7 +24,7 @@ $(document).ready(function($) {
 $('.series_slider').slick({
     dots: true,
     arrows: false,
-    infinite: true,
+    infinite: false,
 })
 
 /* Popup slider + mobile version */
