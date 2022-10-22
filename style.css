@@ -316,6 +316,12 @@ header ul li a {
     visibility: visible;
     height: 100% !important;
 }
+.tab-select {
+    display: none;
+}
+.tab-select.active {
+    display: inline;
+}
 
 /* Photo & video */
 .photo_video {
