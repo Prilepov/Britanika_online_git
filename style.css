@@ -17,7 +17,7 @@ body {
     background: #F5F5F5;
 }
 header {
-    position: absolute;
+    position: relative;
     top: 0;
     width: 80%;
     padding: 0 10% 0 10%;
@@ -26,14 +26,23 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    z-index: 5;
 }
-
+header.fixed {
+    position: fixed;
+    top: 0;
+    background: linear-gradient(180deg, #FFFFFF 40%, rgba(255, 255, 255, 0) 100%);
+    padding-bottom: 2%;
+}
 a {
     color: var(--lead_color);
     text-decoration: none;
 }
 a:hover , a:active , a:checked {
     color: var(--accent_color);
+}
+main {
+    margin-top: -4%;
 }
 
 /* Menu */

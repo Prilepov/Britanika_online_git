@@ -73,8 +73,16 @@ $('#series_select').change(function(){
   $('select.switchoption').hide();
   $('#switch_'+$(this).val()).show();
 });
-
+/* Select series switcher IMG*/
 $('#series_select').change(function(){
   $('img.switchoptionimg').hide();
   $('#switchimg_'+$(this).val()).show();
+});
+
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 200) {
+      $('header').addClass('fixed');
+  } else {
+      $('header').removeClass('fixed');
+  }
 });
