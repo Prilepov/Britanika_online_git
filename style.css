@@ -316,11 +316,8 @@ header ul li a {
     visibility: visible;
     height: 100% !important;
 }
-.tab-select {
+.generation_td select:not(:nth-child(1)) {
     display: none;
-}
-.tab-select.active {
-    display: inline;
 }
 
 /* Photo & video */

@@ -69,11 +69,7 @@ $( document ).ready(function() {
   })
 
 /* Select series switcher */
-$( document ).ready(function() {
-  $(".switcher_select").click(function(e) {
-    $(this).addClass('active');{
-      $('.tab-select.active').removeClass('active');
-      $('.tab-select.' + $(this).data('target')).addClass('active');
-    }
-  })
-})
+$('#series_select').change(function(){
+  $('select.switchoption').hide();
+  $('#switch_'+$(this).val()).show();
+});
