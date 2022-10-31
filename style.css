@@ -319,6 +319,9 @@ header ul li a {
 .generation_td select:not(:nth-child(1)) {
     display: none;
 }
+#seriesimg_select img:not(:nth-child(1)) {
+    display: none;
+}
 
 /* Photo & video */
 .photo_video {

@@ -73,3 +73,8 @@ $('#series_select').change(function(){
   $('select.switchoption').hide();
   $('#switch_'+$(this).val()).show();
 });
+
+$('#series_select').change(function(){
+  $('img.switchoptionimg').hide();
+  $('#switchimg_'+$(this).val()).show();
+});
