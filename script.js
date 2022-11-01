@@ -74,7 +74,7 @@ $('#series_select').change(function(){
   $('#switch_'+$(this).val()).show();
 });
 /* Select series switcher IMG*/
-$('#series_select').change(function(){
+$('.switchoption').change(function(){
   $('img.switchoptionimg').hide();
   $('#switchimg_'+$(this).val()).show();
 });

@@ -17,7 +17,7 @@ body {
     background: #F5F5F5;
 }
 header {
-    position: relative;
+    position: fixed;
     top: 0;
     width: 80%;
     padding: 0 10% 0 10%;
