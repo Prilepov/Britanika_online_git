@@ -711,6 +711,8 @@ header ul li a {
     line-height: calc( 2px + 13 * ( 100vw / 1920 ) );
     display: flex;
     box-shadow: inset 0px 0px 10px #BAA8A4;
+    width: 14.6vw;
+    box-sizing: border-box;
 }
 .services_array > div:first-child ul li:hover {
     background: var(--accent_color);

@@ -79,6 +79,7 @@ $('#series_select').change(function(){
   $('#switchimg_'+$(this).val()).show();
 });
 
+/* Fix Menu when scrolled */
 $(window).scroll(function(){
   if ($(this).scrollTop() > 200) {
       $('header').addClass('fixed');
