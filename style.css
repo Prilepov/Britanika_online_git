@@ -26,7 +26,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    z-index: 5;
+    z-index: 15;
 }
 header.fixed {
     position: fixed;
@@ -40,9 +40,6 @@ a {
 }
 a:hover , a:active , a:checked {
     color: var(--accent_color);
-}
-main {
-    margin-top: -4%;
 }
 
 /* Menu */
@@ -165,8 +162,19 @@ header ul li a {
 
 /* Menu brand selection */
 .menu_brand_select {
-    background: url(images/background_menu_brand.png) no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(180deg, #4A3D3A 0%, rgba(255, 255, 255, 0) 100%);
+}
+.menu_brand_select_jag {
+    background-image: linear-gradient(180deg, #B4BFCA 0%, rgba(255, 255, 255, 0) 100%);
+}
+.menu_brand_select_jaguar {
+    background-image: linear-gradient(180deg, #B4BFCA 0%, rgba(255, 255, 255, 0) 100%);
+}
+.menu_brand_select_bmw {
+    background-image: linear-gradient(180deg, #B4C0BC 0%, rgba(255, 255, 255, 0) 100%);
+}
+.menu_brand_select_mers {
+    background-image: linear-gradient(180deg, #B5BCCC 0%, rgba(255, 255, 255, 0) 100%);
 }
 .menu_brand_select nav ul {
     display: flex;
@@ -219,6 +227,18 @@ header ul li a {
     align-items: center;
     background: linear-gradient(279.85deg, #CEC5BE 0%, rgba(206, 197, 190, 0) 100%) ;
 }
+.brand_screen_jaguar {
+    background: linear-gradient(279.85deg, #B4BFCA 0%, rgba(206, 197, 190, 0) 100%) ;
+}
+.brand_screen_jag {
+    background: linear-gradient(279.85deg, #B4BFCA 0%, rgba(206, 197, 190, 0) 100%) ;
+}
+.brand_screen_bmw {
+    background: linear-gradient(279.85deg, #B4C0BC 0%, rgba(206, 197, 190, 0) 100%) ;
+}
+.brand_screen_mers {
+    background: linear-gradient(279.85deg, #B5BCCC 0%, rgba(206, 197, 190, 0) 100%) ;
+}
 .brand_screen > div:first-child {
     position: absolute;
     top: 0;
@@ -248,10 +268,22 @@ header ul li a {
     background: url(images/background_brand_screen_jaguar.jpg) no-repeat center /cover;
 }
 .brand_screen > div:nth-child(2) > div:first-child > div {
-    background: linear-gradient(0deg, rgba(224, 219, 214, 0.96) 0%, rgba(255, 255, 255, 0.6) 100%);;
+    background: linear-gradient(0deg, rgba(224, 219, 214, 0.96) 0%, rgba(255, 255, 255, 0.6) 100%);
     width: 100%;
     position: absolute;
     bottom: 0;
+}
+.brand_screen_jaguar > div:nth-child(2) > div:first-child > div {
+    background: linear-gradient(0deg, #B4BFCA 0%, rgba(255, 255, 255, 0.6) 100%);
+}
+.brand_screen_jag > div:nth-child(2) > div:first-child > div {
+    background: linear-gradient(0deg, #B4BFCA 0%, rgba(255, 255, 255, 0.6) 100%);
+}
+.brand_screen_bmw > div:nth-child(2) > div:first-child > div {
+    background: linear-gradient(0deg, #B4C0BC 0%, rgba(255, 255, 255, 0.6) 100%);
+}
+.brand_screen_mers > div:nth-child(2) > div:first-child > div {
+    background: linear-gradient(0deg, #B5BCCC 0%, rgba(255, 255, 255, 0.6) 100%);
 }
 .brand_screen > div:nth-child(2) > div:first-child > div p {
     padding: 1.66% 0 1.66% 0;
@@ -262,6 +294,17 @@ header ul li a {
     background: #C0BAB7;
     border-radius: 5px 0px 0px 5px;
     padding-top: 10%;
+}
+.pop_service_jag {
+    background: #B4BFCA;
+}.pop_service_jaguar {
+    background: #B4BFCA;
+}
+.pop_service_bmw {
+    background: #B4C0BC;
+}
+.pop_service_mers {
+    background: #B5BCCC;
 }
 .pop_service > div {
     width: 53.94%;
@@ -342,6 +385,15 @@ header ul li a {
     background-size: contain;
     background-repeat: no-repeat;
 }
+.photo_video_jag {
+    background-image: url(images/background_circle_jaguar.png), linear-gradient(279.85deg, #B4BFCA 0%, rgba(206, 197, 190, 0) 100%);
+}
+.photo_video_bmw {
+    background-image: url(images/background_circle_bmw.png), linear-gradient(279.85deg, #B4BFCA 0%, rgba(206, 197, 190, 0) 100%);
+}
+.photo_video_mers {
+    background-image: url(images/background_circle_mersedes.png), linear-gradient(279.85deg, #B4BFCA 0%, rgba(206, 197, 190, 0) 100%);
+}
 .photo_video > img {
     width: 28.8%;
     position: absolute;
@@ -413,7 +465,25 @@ header ul li a {
     background-size: contain;
 }
 .car_series_jaguar {
-    background: url(images/background_series_jaguar.png), linear-gradient(279.85deg, #CEC5BE 0%, rgba(206, 197, 190, 0) 100%);
+    background: url(images/background_series_jaguar.png), linear-gradient(279.85deg, #B4C0BC 0%, rgba(206, 197, 190, 0) 100%);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
+}
+.car_series_jag {
+    background: url(images/background_series_jaguar.png), linear-gradient(279.85deg, #B4C0BC 0%, rgba(206, 197, 190, 0) 100%);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
+}
+.car_series_bmw {
+    background: url(images/background_series_jaguar.png), linear-gradient(279.85deg, #B5BCCC 0%, rgba(206, 197, 190, 0) 100%);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
+}
+.car_series_mers {
+    background: url(images/background_series_jaguar.png), linear-gradient(279.85deg, #B5BCCC 0%, rgba(206, 197, 190, 0) 100%);
     background-repeat: no-repeat;
     background-position: center left;
     background-size: contain;
@@ -429,6 +499,18 @@ header ul li a {
     justify-content: center;
     align-items: center;
     background: #C8C3C0;
+}
+.car_series_jaguar > div:first-child > div:nth-child(1) {
+    background: #B4BFCA;
+}
+.car_series_jag > div:first-child > div:nth-child(1) {
+    background: #B4BFCA;
+}
+.car_series_bmw > div:first-child > div:nth-child(1) {
+    background: #B4C0BC;
+}
+.car_series_mers > div:first-child > div:nth-child(1) {
+    background: #B5BCCC;
 }
 .car_series > div:first-child > div:nth-child(1) > img {
     height: 4.07em;
@@ -473,6 +555,18 @@ header ul li a {
     display: flex;
     align-items: center;
 }
+.car_series_jaguar > div:last-child > div:nth-child(1) {
+    background: #B4BFCA;
+}
+.car_series_jag > div:last-child > div:nth-child(1) {
+    background: #B4BFCA;
+}
+.car_series_bmw > div:last-child > div:nth-child(1) {
+    background: #B4C0BC;
+}
+.car_series_mers > div:last-child > div:nth-child(1) {
+    background: #B5BCCC;
+}
 .car_series > div:last-child > div:nth-child(1) > p {
     margin: 0;
     font-size: calc( 8px + 11 * ( 100vw / 1920 ) );
@@ -483,6 +577,18 @@ header ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.car_series_jaguar > div:last-child > div:nth-child(2) {
+    background: linear-gradient(-270deg, rgba(255, 255, 255, 0.7) -50%, #637281 100%);
+}
+.car_series_jag > div:last-child > div:nth-child(2) {
+    background: linear-gradient(-270deg, rgba(255, 255, 255, 0.7) -50%, #637281 100%);
+}
+.car_series_bmw > div:last-child > div:nth-child(2) {
+    background: linear-gradient(-270deg, rgba(255, 255, 255, 0.7) -50%, #6E807A 100%);
+}
+.car_series_mers > div:last-child > div:nth-child(2) {
+    background: linear-gradient(-270deg, rgba(255, 255, 255, 0.7) -50%, #60687A 100%);
 }
 .series_slider {
     width: 25.87em;
@@ -518,6 +624,21 @@ header ul li a {
     background: #ffffff;
     text-align: center;
     border-radius: 5px;
+}
+.long_btn {
+    width: 105%;
+    height: 2.28em;
+    font-weight: 600;
+    font-size: calc( 5px + 11 * ( 100vw / 1920 ) );
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent_color);
+    background: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-bottom: 0.3em;
 }
 
 /* Your car data */
